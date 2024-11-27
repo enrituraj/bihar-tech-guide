@@ -34,7 +34,7 @@ const Navbar = () => {
           className="text-xl text-white flex items-center gap-2 font-bold"
         >
           <span className="w-5 h-5 bg-blue-500 rounded-full"></span>
-          Edu<span className="text-blue-300">Sphere</span>
+          BiharTech<span className="text-blue-300">Guide</span>
         </Link>
 
         {/* Desktop Navigation */}
