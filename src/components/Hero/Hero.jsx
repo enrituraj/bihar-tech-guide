@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
           A Best Education is the Foundation of Success
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-gray-300">
+        <p className="mt-4 font-semibold text-lg md:text-xl text-gray-100">
           Unlock your true potential with the best education, designed to pave
           your way to success. Build the skills and knowledge that empower you
           for a brighter future.

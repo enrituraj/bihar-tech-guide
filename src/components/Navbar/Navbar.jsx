@@ -21,11 +21,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full py-4 px-8 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full py-6 px-8 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-gray-900/80 backdrop-blur-md shadow-lg"
+          ? " bg-slate-900/80 backdrop-blur-md shadow-lg"
           : "bg-transparent"
-      }`}
+        }}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand Logo */}
@@ -91,13 +91,13 @@ const Navbar = () => {
 export default Navbar;
 
 // Reusable Menu Component
-const Menu = ({ menuClassList = "hidden md:flex space-x-6 text-gray-100", menuLiClass = "" }) => {
+const Menu = ({ menuClassList = "hidden md:flex space-x-8 text-gray-100", menuLiClass = "" }) => {
   return (
     <ul className={menuClassList}>
       <li className={`list-none ${menuLiClass}`}>
         <Link
           to="/"
-          className="font-medium text-white hover:text-gray-300 transition-all"
+          className="font-semibold text-white hover:text-gray-300 transition-all"
         >
           Home
         </Link>
@@ -105,7 +105,7 @@ const Menu = ({ menuClassList = "hidden md:flex space-x-6 text-gray-100", menuLi
       <li className={`list-none ${menuLiClass}`}>
         <Link
           to="/about"
-          className="font-medium text-white hover:text-gray-300 transition-all"
+          className="font-semibold text-white hover:text-gray-300 transition-all"
         >
           About
         </Link>
@@ -113,7 +113,7 @@ const Menu = ({ menuClassList = "hidden md:flex space-x-6 text-gray-100", menuLi
       <li className={`list-none ${menuLiClass}`}>
         <Link
           to="/contact"
-          className="font-medium text-white hover:text-gray-300 transition-all"
+          className="font-semibold text-white hover:text-gray-300 transition-all"
         >
           Contact
         </Link>
@@ -121,7 +121,7 @@ const Menu = ({ menuClassList = "hidden md:flex space-x-6 text-gray-100", menuLi
       <li className={`list-none ${menuLiClass}`}>
         <Link
           to="/signin"
-          className="font-medium text-white hover:text-gray-300 transition-all"
+          className="font-semibold text-white hover:text-gray-300 transition-all"
         >
           Sign In
         </Link>

@@ -37,12 +37,12 @@ const BEULinks = () => {
   ];
 
   return (
-    <section className="bg-gray-900 py-10">
+    <section className=" py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-white text-3xl font-semibold mb-6">
+        <h2 className="text-3xl font-semibold mb-6">
           Important Bihar University Links
         </h2>
-        <p className="text-gray-400 mb-8">
+        <p className="text-gray-800 font-semibold mb-8">
           Access essential resources for Bihar University students, including exam forms, results, scholarships, and college information.
         </p>
         <div

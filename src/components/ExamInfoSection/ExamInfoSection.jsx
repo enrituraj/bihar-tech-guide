@@ -68,12 +68,12 @@ const ExamInfoSection = () => {
   ];
 
   return (
-    <section className="bg-gray-900 py-10">
+    <section className=" py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-white text-3xl font-semibold mb-6">
+        <h2 className="text-3xl font-semibold mb-6">
           All About Exams
         </h2>
-        <p className="text-gray-400 mb-8">
+        <p className="text-gray-800 font-semibold mb-8">
           Discover everything you need for your engineering entrance exams.
         </p>
         <div
@@ -105,7 +105,7 @@ const ExamInfoSection = () => {
 
 const ExamInfoCard = ({ image, label, description, buttonLabel, link }) => {
   return (
-    <div className="flex flex-col bg-gray-900 hover:bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+    <div className="flex flex-col bg-gray-200 hover:bg-gray-100 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
       <div className="w-full h-40 mb-4">
         <img
           src={image}
@@ -113,8 +113,8 @@ const ExamInfoCard = ({ image, label, description, buttonLabel, link }) => {
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
-      <h3 className="text-white text-xl font-semibold mb-2">{label}</h3>
-      <p className="text-gray-400 mb-4">{description}</p>
+      <h3 className="text-xl font-semibold mb-2">{label}</h3>
+      <p className="text-gray-400 font-semibold mb-4">{description}</p>
       <a
         href={link}
         target="_blank"
