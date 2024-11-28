@@ -4,36 +4,28 @@ const BEULinks = () => {
   const biharUniLinks = [
     {
       label: "Bihar University Exam Forms",
-      image: "https://example.com/exam-form-image.jpg", // Replace with the actual image URL
+      image: "https://thumbs.dreamstime.com/b/bright-colorful-exam-logo-speech-bubbles-isolated-white-background-perfect-education-test-preparation-learning-320499128.jpg", // Replace with the actual image URL
       description: "Fill out your Bihar University exam forms online here.",
       buttonLabel: "Apply Now",
       link: "https://www.biharuniversity.ac.in/exam-forms",
-      bgColor: "bg-blue-600", // Unique background color
+      bgColor: "bg-blue-600",
     },
     {
       label: "Bihar University Results",
-      image: "https://example.com/results-image.jpg", // Replace with the actual image URL
+      image: "https://t4.ftcdn.net/jpg/00/59/52/67/360_F_59526704_SS4Qc8FuUb5100Thit3TGhNtg5hvgBry.jpg",
       description: "Check your Bihar University exam results on the official portal.",
       buttonLabel: "View Results",
       link: "https://www.biharuniversity.ac.in/results",
-      bgColor: "bg-green-600", // Unique background color
+      bgColor: "bg-green-600", 
     },
     {
-      label: "Bihar University Scholarships",
-      image: "https://example.com/scholarships-image.jpg", // Replace with the actual image URL
+      label: "Bihar University Notices",
+      image: "https://img.freepik.com/premium-vector/notice-free-vector_734448-5.jpg", // Replace with the actual image URL
       description: "Find scholarship opportunities for students of Bihar University.",
       buttonLabel: "Apply for Scholarships",
       link: "https://www.biharuniversity.ac.in/scholarships",
       bgColor: "bg-orange-600", // Unique background color
-    },
-    {
-      label: "Bihar Engineering Colleges List",
-      image: "https://example.com/colleges-list-image.jpg", // Replace with the actual image URL
-      description: "Explore the list of engineering colleges in Bihar.",
-      buttonLabel: "Explore Colleges",
-      link: "https://www.biharuniversity.ac.in/engineering-colleges-list",
-      bgColor: "bg-purple-600", // Unique background color
-    },
+    }
   ];
 
   return (

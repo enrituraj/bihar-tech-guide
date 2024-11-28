@@ -1,36 +1,37 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ExamsSection = () => {
   const exams = [
     {
       name: "JEE Main",
       logo: "https://w7.pngwing.com/pngs/612/865/png-transparent-central-board-of-secondary-education-ugc-net-cbse-exam-class-10-neet-jee-main-school-label-logo-india.png",
-      link: "https://jeemain.nta.nic.in/",
+      link: "#",
     },
     {
       name: "JEE Advanced",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/JEE_Advanced.png/800px-JEE_Advanced.png",
-      link: "https://jeeadv.ac.in/",
+      logo: "https://thegurukulians.com/images/courses/inner-new/logos/engineering/Jee-advanced.jpg",
+      link: "#",
     },
     {
-      name: "GATE",
-      logo: "https://collegekampus.com/wp-content/uploads/2020/11/Gate-logo.png",
-      link: "https://gate.iitkgp.ac.in/",
+      name: "BCECE",
+      logo: "https://bihartechguide.in/images.jpg",
+      link: "#",
     },
     {
       name: "BITSAT",
       logo: "https://static.zollege.in/public/college_data/images/logos/BITS%20Pilani%20Logo.png",
-      link: "https://bitsadmission.com/",
+      link: "#",
     },
     {
-      name: "VITEEE",
-      logo: "https://i.pinimg.com/736x/c6/c2/e9/c6c2e9022f25f404fe108a4cfefab222.jpg",
-      link: "https://vit.ac.in/",
+      name: "Wbjee",
+      logo: "https://bihartechguide.in/wbjee.jpg",
+      link: "#",
     },
     {
-      name: "SRMJEEE",
-      logo: "https://www.iaspaper.net/wp-content/uploads/2019/11/SRMJEEM.png",
-      link: "https://srmist.edu.in/",
+      name: "Kiit",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnSqRItNHdFKfNpakly0oEesulHprcdbG2A&s",
+      link: "#",
     },
   ];
 
@@ -55,7 +56,7 @@ const ExamsSection = () => {
             "
         >
           {exams.map((exam, index) => (
-            <ExamCard
+            <ExamCard1
               key={index}
               logo={exam.logo}
               name={exam.name}
@@ -84,6 +85,37 @@ const ExamCard = ({ logo, name, link }) => {
         />
       </div>
       <h3 className="text-lg font-semibold">{name}</h3>
+    </a>
+  );
+};
+
+const ExamCard1 = ({ logo, name, link }) => {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative flex justify-center flex-col h-60 items-center p-6 rounded-xl transform hover:scale-105 transition-all"
+    >
+      {/* <img
+        src={logo}
+        alt={name}
+        className="absolute inset-0  w-full h-full object-cover overflow-hidden -z-10"
+      /> */}
+      <div className="absolute inset-0 rounded-lg w-full h-full bg-gray-300/90 backdrop-blur-sm"></div>
+
+      <div className="w-24 h-24 mb-4 z-10">
+        <img
+          src={logo}
+          alt={name}
+          className="w-full h-full object-cover shadow-lg rounded-full border-2 border-gray-100"
+        />
+      </div>
+      <h3 className="text-lg font-semibold z-10">{name}</h3>
+      <a href="" className="flex items-center space-x-2 text-indigo-800 z-10 font-semibold text-lg my-2">
+        <span> Vist Site</span>
+        <FaExternalLinkAlt className="w-4 h-4" />
+      </a>
     </a>
   );
 };

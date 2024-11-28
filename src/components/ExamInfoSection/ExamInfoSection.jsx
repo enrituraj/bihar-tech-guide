@@ -3,73 +3,52 @@ import React from "react";
 const ExamInfoSection = () => {
   const examResources = [
     {
-      label: "JEE Main PYQ",
-      image: "https://example.com/jee-main-pyq.jpg",
-      description: "Find previous years' question papers for JEE Main to boost your preparation.",
-      buttonLabel: "Explore PYQs",
-      link: "https://jeemain.nta.nic.in/",
+      label: "Syllabus",
+      image: "https://thumbs.dreamstime.com/b/syllabus-isolated-floral-plants-pattern-green-hexagon-button-syllabus-floral-plants-pattern-green-hexagon-button-143205572.jpg",
+      description: "Bihar Engineering University Syllabus for every branches to boost your preparation.",
+      buttonLabel: "Explore Syllabus",
+      link: "#",
     },
     {
-      label: "JEE Advanced Notes",
-      image: "https://example.com/jee-advanced-notes.jpg",
-      description: "Get the best notes curated by top educators for JEE Advanced.",
+      label: "PYQ'S",
+      image: "https://t3.ftcdn.net/jpg/04/92/96/18/360_F_492961866_MIqCTiGZD0ZzjXTAfYCEJdGaeCYAZSAT.jpg",
+      description: "Get the best Module-Wise PYQ'S with Solution.",
       buttonLabel: "View Notes",
-      link: "https://jeeadv.ac.in/",
+      link: "#",
+    },
+    {
+      label: "Short Notes",
+      image: "https://img.freepik.com/premium-vector/notes-icon-logo-vector-design-template_827767-4987.jpg",
+      description: "Get the best notes created by top educators and toppers.",
+      buttonLabel: "Learn More",
+      link: "#",
     },
     {
       label: "GATE Study Material",
-      image: "https://example.com/gate-study.jpg",
+      image: "https://collegekampus.com/wp-content/uploads/2020/11/Gate-logo.png",
       description: "Explore comprehensive study material for GATE preparation.",
       buttonLabel: "Start Learning",
-      link: "https://gate.iitkgp.ac.in/",
+      link: "#",
     },
     {
-      label: "BITSAT Tips & Tricks",
-      image: "https://example.com/bitsat-tips.jpg",
-      description: "Learn expert tips to excel in the BITSAT entrance exam.",
+      label: "BEU Colleges",
+      image: "https://media.licdn.com/dms/image/v2/D4D22AQG9wQaJ-LjxUA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1697210258887?e=2147483647&v=beta&t=y3hnWkB1pQ6TDL3Jx93y2ARvcxIMtIjdUD3UjY4hUjM",
+      description: "List of all BEU approved college gorvemental and private.",
+      buttonLabel: "Visit Website",
+      link: "#",
+    },
+    {
+      label: "E-library",
+      image: "https://images.squarespace-cdn.com/content/v1/61b70faf45fdc445063b5443/994670b8-3627-45d8-b17f-cac9d5e16aa1/unnamed-min.png",
+      description: "National digital library for Engineers",
       buttonLabel: "Learn More",
-      link: "https://bitsadmission.com/",
-    },
-    {
-      label: "VITEEE Prep Guide",
-      image: "https://example.com/viteee-guide.jpg",
-      description: "Your ultimate preparation guide for VITEEE success.",
-      buttonLabel: "Read Guide",
-      link: "https://vit.ac.in/",
-    },
-    {
-      label: "SRMJEEE Sample Papers",
-      image: "https://example.com/srmjeee-papers.jpg",
-      description: "Download sample papers to ace your SRMJEEE entrance exam.",
-      buttonLabel: "Download Papers",
-      link: "https://srmist.edu.in/",
-    },
-    {
-      label: "NEET PYQs",
-      image: "https://example.com/neet-pyqs.jpg",
-      description: "Access NEET's previous years' question papers with solutions.",
-      buttonLabel: "Access PYQs",
-      link: "https://neet.nta.nic.in/",
-    },
-    {
-      label: "Engineering Scholarships",
-      image: "https://example.com/engineering-scholarships.jpg",
-      description: "Find scholarships for aspiring engineering students.",
-      buttonLabel: "Find Scholarships",
-      link: "https://scholarships.gov.in/",
-    },
-    {
-      label: "Career Counseling",
-      image: "https://example.com/career-counseling.jpg",
-      description: "Get expert advice on choosing the right engineering career path.",
-      buttonLabel: "Get Advice",
-      link: "https://careercounseling.com/",
-    },
+      link: "#",
+    }
   ];
 
   return (
     <section className=" py-10">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-6">
           All About Exams
         </h2>
@@ -105,8 +84,8 @@ const ExamInfoSection = () => {
 
 const ExamInfoCard = ({ image, label, description, buttonLabel, link }) => {
   return (
-    <div className="flex flex-col bg-gray-200 hover:bg-gray-100 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
-      <div className="w-full h-40 mb-4">
+    <div className="flex flex-col bg-gray-300 hover:bg-gray-200 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+      <div className="w-40 h-40 mb-4 mx-auto">
         <img
           src={image}
           alt={label}
@@ -114,7 +93,7 @@ const ExamInfoCard = ({ image, label, description, buttonLabel, link }) => {
         />
       </div>
       <h3 className="text-xl font-semibold mb-2">{label}</h3>
-      <p className="text-gray-400 font-semibold mb-4">{description}</p>
+      <p className="text-gray-800 font-semibold mb-4">{description}</p>
       <a
         href={link}
         target="_blank"
