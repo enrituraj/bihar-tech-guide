@@ -36,7 +36,7 @@ const ExamsSection = () => {
   ];
 
   return (
-    <section className=" py-10">
+    <section className=" py-10" id="examSection">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-6">
           Popular Engineering Exams

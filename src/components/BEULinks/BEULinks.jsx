@@ -9,6 +9,7 @@ const BEULinks = () => {
       buttonLabel: "Apply Now",
       link: "https://www.biharuniversity.ac.in/exam-forms",
       bgColor: "bg-blue-600",
+      btnColor: "bg-blue-800",
     },
     {
       label: "Bihar University Results",
@@ -17,6 +18,7 @@ const BEULinks = () => {
       buttonLabel: "View Results",
       link: "https://www.biharuniversity.ac.in/results",
       bgColor: "bg-green-600", 
+      btnColor: "bg-green-800", 
     },
     {
       label: "Bihar University Notices",
@@ -24,7 +26,8 @@ const BEULinks = () => {
       description: "Find scholarship opportunities for students of Bihar University.",
       buttonLabel: "Apply for Scholarships",
       link: "https://www.biharuniversity.ac.in/scholarships",
-      bgColor: "bg-orange-600", // Unique background color
+      bgColor: "bg-yellow-500", // Unique background color
+      btnColor: "bg-yellow-700", // Unique background color
     }
   ];
 
@@ -56,6 +59,7 @@ const BEULinks = () => {
               buttonLabel={link.buttonLabel}
               link={link.link}
               bgColor={link.bgColor}
+              btnColor={link.btnColor}
             />
           ))}
         </div>
@@ -65,7 +69,7 @@ const BEULinks = () => {
 };
 
 
-const BiharUniLinkCard = ({ image, label, description, buttonLabel, link, bgColor }) => {
+const BiharUniLinkCard = ({ image,btnColor, label, description, buttonLabel, link, bgColor }) => {
   return (
     <div
       className={`flex flex-col ${bgColor} hover:bg-opacity-80 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all`}
@@ -83,7 +87,7 @@ const BiharUniLinkCard = ({ image, label, description, buttonLabel, link, bgColo
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-all"
+        className={` ${btnColor} mt-auto text-white text-center py-2 px-4 rounded-lg hover:${btnColor} transition-all`}
       >
         {buttonLabel}
       </a>

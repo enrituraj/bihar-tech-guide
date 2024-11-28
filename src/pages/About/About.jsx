@@ -17,13 +17,13 @@ export default AboutUs;
 const TeamMemberSection = () => {
   const teamMembers = [
     {
-      name: 'Abhiranjan Singh',
+      name: 'Ritu Raj',
       role: 'Full-Stack Developer',
-      image: 'https://delicate-frangollo-4479c4.netlify.app/Abhi.jpeg', // Replace with the correct path to the image
+      image: 'https://www.enrituraj.in/_next/image?url=%2Frituraj.jpeg&w=640&q=75', 
       description:
-        'Our dedicated full-stack developer. His hard work and commitment to excellence have been instrumental in bringing BiharTechGuide to life.',
-      link: '#',
-      gradient: 'bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600',
+        'A passionate web developer with experience in modern technologies and frameworks. Ready to create impactful solutions.',
+      link: 'https://www.enrituraj.in/',
+      gradient: 'bg-gradient-to-r from-purple-500 via-purple-600 to-purple-900',
     },
     {
       name: 'Shruti Singh',
@@ -33,6 +33,15 @@ const TeamMemberSection = () => {
         'Our talented frontend developer, known for his attention to detail and design expertise, helped create an engaging user experience.',
       link: '#',
       gradient: 'bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500',
+    },
+    {
+      name: 'Abhiranjan Singh',
+      role: 'Full-Stack Developer',
+      image: 'https://delicate-frangollo-4479c4.netlify.app/Abhi.jpeg', // Replace with the correct path to the image
+      description:
+        'Our dedicated full-stack developer. His hard work and commitment to excellence have been instrumental in bringing BiharTechGuide to life.',
+      link: '#',
+      gradient: 'bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600',
     },
     {
       name: 'Prince Kumar',
@@ -80,7 +89,7 @@ const TeamMemberSection = () => {
               href={member.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit block bg-blue-700 text-white px-8 mt-4 py-3 rounded-lg text-center hover:bg-blue-800 transition-all"
+              className={`${member.gradient} w-fit block bg-blue-700 text-white px-8 mt-4 py-3 rounded-lg text-center hover:bg-blue-800 transition-all`}
             >
               Contact Me
             </a>

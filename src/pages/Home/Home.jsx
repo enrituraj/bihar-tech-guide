@@ -6,13 +6,13 @@ import BEULinks from "../../components/BEULinks/BEULinks";
 
 const Home = () => {
     return (
-      <>
+      <div class="scroll-smooth">
         <Hero/>
         <ExamsSection/>
         <ExamInfoSection/>
         <ImportantLinksSection/>
         <BEULinks/>
-      </>
+      </div>
     );
   }
   

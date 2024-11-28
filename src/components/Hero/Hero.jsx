@@ -1,4 +1,6 @@
 import React from "react";
+import { SlRocket } from "react-icons/sl";
+import wave from './../../assets/pattern.png';
 
 const Hero = () => {
   return (
@@ -33,21 +35,26 @@ const Hero = () => {
   ></div>
 </div>
 
+<img
+    className="w-full h-full object-cover absolute inset-0 transform rotate-[-10deg] opacity-40 overflow-hidden scale-105 filter invert brightness-110 contrast-120"
+    src={wave}
+    alt="Wave"
+  />
 
       {/* Hero Content */}
       <div className="relative text-center z-10 max-w-2xl px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-        
-          A best Education is Foundation for Better Future
+        <span>A best Education is Foundation for Better Future</span>
+          <span> <SlRocket className="inline" /></span>
         </h1>
         <p className="mt-4 font-semibold text-lg md:text-xl text-gray-100">
           Unlock your true potential with the best education, designed to pave
           your way to success. Build the skills and knowledge that empower you
           for a brighter future.
         </p>
-        <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md hover:shadow-xl transition">
+        <a href="#examSection" className="inline-block mt-8 px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-3xl shadow-md hover:shadow-xl transition">
           Get Started
-        </button>
+        </a>
       </div>
     </div>
   );

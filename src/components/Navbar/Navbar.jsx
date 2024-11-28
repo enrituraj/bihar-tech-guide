@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import { TbBulb } from "react-icons/tb";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,9 @@ const Navbar = () => {
           to="/"
           className="text-xl text-white flex items-center gap-2 font-bold"
         >
-          <span className="w-5 h-5 bg-blue-500 rounded-full"></span>
+          <div className="bg-blue-500 p-2 rounded-2xl">
+              <TbBulb className="w-6 h-6 text-yellow-400" />
+          </div>
           BiharTech<span className="text-blue-300">Guide</span>
         </Link>
 
