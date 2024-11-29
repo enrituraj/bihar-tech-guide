@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/About/About";
-import Login from "./pages/Login/Login";
+import Signin from "./pages/Signin/Signin";
 import Contact from "./pages/Contact/Contact";
-import Register from "./pages/Register/Register";
+import Signup from "./pages/Signup/Signup";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -17,8 +17,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/signin" element={<Login/>} />
-        <Route path="/signup" element={<Register/>} />
+        <Route path="/signin" element={<Signin/>} />
+        <Route path="/signup" element={<Signup/>} />
       </Routes>
       <Footer/>
     </Router>

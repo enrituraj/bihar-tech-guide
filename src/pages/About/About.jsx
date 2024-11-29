@@ -89,7 +89,7 @@ const TeamMemberSection = () => {
               href={member.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${member.gradient} w-fit block bg-blue-700 text-white px-8 mt-4 py-3 rounded-lg text-center hover:bg-blue-800 transition-all`}
+              className={`${member.gradient} inline-block bg-blue-700 text-white px-8 mt-4 py-3 rounded-lg text-center hover:bg-blue-800 transition-all`}
             >
               Contact Me
             </a>
