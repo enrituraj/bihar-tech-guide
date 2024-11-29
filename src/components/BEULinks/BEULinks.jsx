@@ -34,7 +34,7 @@ const BEULinks = () => {
   return (
     <section className=" py-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-6">
+        <h2 className="text-4xl font-extrabold tracking-tight mb-6">
           Important Bihar University Links
         </h2>
         <p className="text-gray-800 font-semibold mb-8">

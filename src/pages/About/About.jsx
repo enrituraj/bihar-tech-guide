@@ -1,4 +1,5 @@
 import React from 'react';
+import { teamMembers } from "./../../constants";
 
 const AboutUs = () => {
   return (
@@ -15,53 +16,6 @@ const AboutUs = () => {
 export default AboutUs;
 
 const TeamMemberSection = () => {
-  const teamMembers = [
-    {
-      name: 'Ritu Raj',
-      role: 'Full-Stack Developer',
-      image: 'https://www.enrituraj.in/_next/image?url=%2Frituraj.jpeg&w=640&q=75', 
-      description:
-        'A passionate web developer with experience in modern technologies and frameworks. Ready to create impactful solutions.',
-      link: 'https://www.enrituraj.in/',
-      gradient: 'bg-gradient-to-r from-purple-500 via-purple-600 to-purple-900',
-    },
-    {
-      name: 'Shruti Singh',
-      role: 'Frontend Developer',
-      image: 'https://delicate-frangollo-4479c4.netlify.app/suruti.jpg',
-      description:
-        'Our talented frontend developer, known for his attention to detail and design expertise, helped create an engaging user experience.',
-      link: '#',
-      gradient: 'bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500',
-    },
-    {
-      name: 'Abhiranjan Singh',
-      role: 'Full-Stack Developer',
-      image: 'https://delicate-frangollo-4479c4.netlify.app/Abhi.jpeg', // Replace with the correct path to the image
-      description:
-        'Our dedicated full-stack developer. His hard work and commitment to excellence have been instrumental in bringing BiharTechGuide to life.',
-      link: '#',
-      gradient: 'bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600',
-    },
-    {
-      name: 'Prince Kumar',
-      role: 'Data Collector',
-      image: 'https://delicate-frangollo-4479c4.netlify.app/prince.jpg',
-      description:
-        'Our dedicated data collector and mentor for BiharTechGuide. His expertise in data collection was invaluable to our project’s success.',
-      link: '#', 
-      gradient: 'bg-gradient-to-r from-green-500 via-teal-500 to-blue-500',
-    },
-    {
-      name: 'Sumit Gupta',
-      role: 'Data Collector',
-      image: 'https://delicate-frangollo-4479c4.netlify.app/sumit.jpg',
-      description:
-        'Our talented data collector. His attention to detail and hard work contributed greatly to the success of BiharTechGuide.',
-      link: '#',
-      gradient: 'bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500',
-    },
-  ];
 
   return (
     <>

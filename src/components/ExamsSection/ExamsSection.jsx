@@ -38,7 +38,7 @@ const ExamsSection = () => {
   return (
     <section className=" py-10" id="examSection">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-6">
+        <h2 className="text-4xl font-extrabold tracking-tight mb-6">
           Popular Engineering Exams
         </h2>
         <p className="text-gray-800 font-semibold text-balance mb-8">
@@ -56,7 +56,7 @@ const ExamsSection = () => {
             "
         >
           {exams.map((exam, index) => (
-            <ExamCard1
+            <ExamCard
               key={index}
               logo={exam.logo}
               name={exam.name}
@@ -75,33 +75,8 @@ const ExamCard = ({ logo, name, link }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col items-center p-6 rounded-xl transform hover:scale-105 transition-all"
-    >
-      <div className="w-16 h-16 mb-4">
-        <img
-          src={logo}
-          alt={name}
-          className="w-full h-full object-cover shadow-lg rounded-full border-2 border-indigo-500"
-        />
-      </div>
-      <h3 className="text-lg font-semibold">{name}</h3>
-    </a>
-  );
-};
-
-const ExamCard1 = ({ logo, name, link }) => {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
       className="relative flex justify-center flex-col h-60 items-center p-6 rounded-xl transform hover:scale-105 transition-all"
     >
-      {/* <img
-        src={logo}
-        alt={name}
-        className="absolute inset-0  w-full h-full object-cover overflow-hidden -z-10"
-      /> */}
       <div className="absolute inset-0 rounded-lg w-full h-full bg-gray-300/90 backdrop-blur-sm"></div>
 
       <div className="w-24 h-24 mb-4 z-10">

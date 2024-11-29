@@ -1,7 +1,8 @@
 import React from "react";
 import { SlRocket } from "react-icons/sl";
 import wave from './../../assets/pattern.png';
-
+import { motion } from "framer-motion";
+import { BsArrowDown } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="relative h-screen bg-gray-900 text-white flex items-center justify-center overflow-hidden">
@@ -52,9 +53,24 @@ const Hero = () => {
           your way to success. Build the skills and knowledge that empower you
           for a brighter future.
         </p>
-        <a href="#examSection" className="inline-block mt-8 px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-3xl shadow-md hover:shadow-xl transition">
-          Get Started
-        </a>
+        <a
+      href="#examSection"
+      className="inline-block mt-8 px-12 py-4 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white text-xl font-semibold rounded-full shadow-md hover:shadow-xl transition"
+    >
+      Get Started
+
+      <motion.div
+        className="inline-block ml-3" 
+        animate={{ y: [0, 8, 0] }}
+        transition={{
+          repeat: Infinity, 
+          repeatType: "loop",
+          duration: 1,
+        }}
+      >
+        <BsArrowDown size={24} />
+      </motion.div>
+    </a>
       </div>
     </div>
   );
