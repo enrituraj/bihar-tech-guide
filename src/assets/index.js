@@ -3,10 +3,6 @@ import notice from "./images/BeuLinks/notice.png";
 import results from "./images/BeuLinks/results.jpg";
 
 import rituraj from "./images/Developer/rituraj.webp"
-import suruti from "./images/Developer/suruti.jpg"
-import abhiranjan from "./images/Developer/Abhiranjan.jpeg"
-import prince from "./images/Developer/prince.jpg"
-import sumit from "./images/Developer/sumit.jpg"
 
 import beu from "./images/ExamDetail/beu.jpg"
 import e_library from "./images/ExamDetail/e_library.png"
@@ -59,10 +55,6 @@ export {
     notice,
     results,
 
-    rituraj,
-    suruti,
-    abhiranjan,
-    prince,
-    sumit,
+    rituraj
 
 };

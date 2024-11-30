@@ -80,7 +80,7 @@ const Signup = () => {
 
           <div className="relative z-10 flex flex-col justify-center items-start p-10 space-y-6 text-white">
             <h1 className="text-3xl font-bold">
-            Join BiharTechGuide Today!
+            Join EduNationHub Today!
             </h1>
             <p className="text-gray-300">
             Become a part of our growing community and gain access to
@@ -110,6 +110,7 @@ const Signup = () => {
             </ul>
           </div>
         </div>
+
         <div className="w-full lg:w-2/5 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-10">
           <div className="w-full max-w-sm space-y-4 mt-10 bg-white/10 p-8 rounded-xl text-center">
             <div className="mb-8">

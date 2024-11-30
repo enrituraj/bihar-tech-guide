@@ -45,7 +45,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative text-center z-10 max-w-2xl px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-        <span>A best Education is Foundation for Better Future</span>
+        <span>Transforming Dreams Into Reality Through Education</span>
           <span> <SlRocket className="inline" /></span>
         </h1>
         <p className="mt-4 font-semibold text-lg md:text-xl text-gray-100">

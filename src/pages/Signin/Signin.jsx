@@ -157,7 +157,7 @@ const Signin = () => {
 
 <div className="relative z-10 flex flex-col justify-center items-start p-10 space-y-6 text-white">
             <h1 className="text-3xl font-bold">
-            Welcome Back to BiharTechGuide!
+            Welcome Back to EduNationHub!
             </h1>
             <p className="text-gray-300">
             Your one-stop platform for all engineering resources, from notes

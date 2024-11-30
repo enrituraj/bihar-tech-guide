@@ -1,4 +1,4 @@
-## BiharTech Guide
+## EduNation Hub
 View the website 
 
-[view the website](bihartechguide.vercel.app)
+[view the website](https://edunationhub.vercel.app/)

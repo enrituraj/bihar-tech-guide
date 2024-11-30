@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "EduNationHub",
+  "name": "EduNationHub is a web plateform for every engineering student",
   "icons": [
     {
       "src": "favicon.ico",

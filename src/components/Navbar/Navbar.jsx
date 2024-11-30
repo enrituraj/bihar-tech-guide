@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className="bg-blue-500 p-2 rounded-2xl">
               <TbBulb className="w-6 h-6 text-yellow-400" />
           </div>
-          BiharTech<span className="text-blue-300">Guide</span>
+          EduNation<span className="text-blue-300">Hub</span>
         </Link>
 
         {/* Desktop Navigation */}
